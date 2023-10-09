@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #17191a;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 20px;
+}
+
+.container-pequeño{
+    background-color: #222526;
+    width: 500px;
+    height: 60px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 10px;
+}
+
+.container-comentario{
+    background-color: #383b3c;
+    width: 400px;
+    height: 40px;
+    border-radius: 50px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    
+}
+
+#comentario{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    text-indent: 10px;
+    color: white;
+
+}
+
+input::placeholder {
+    text-indent: 10px;
+    color: gray;
+}
+
+.imagen-circular {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; 
+    position: relative;
+    left: -410px;
+}
+
+/* Mantén tus estilos existentes */
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semitransparente */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Asegura que el modal esté en la parte superior */
+}
+
+.modal-contenido {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para el textarea del modal */
+textarea {
+    width: 100%;
+    height: 100px;
+    resize: none; /* Evita que el usuario pueda cambiar el tamaño del textarea */
+}
+
+button {
+    background-color: #383b3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Agrega estilos para el botón cuando está desactivado */
+button:disabled {
+    background-color: gray; /* Cambia el color cuando está desactivado */
+    color: white;
+}
+
+/* Agrega estilos para el botón cuando está activado */
+button:enabled {
+    background-color: #383b3c; /* Cambia el color cuando está activado */
+    color: white;
+}
+
+/* Agrega estilos para el botón circular de cerrar */
+.cerrar-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ff0000; /* Cambia el color del botón circular de cerrar */
+    color: white;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Cambia el color del botón circular de cerrar cuando se coloca el cursor encima */
+.cerrar-modal:hover {
+    background-color: #cc0000;
+}

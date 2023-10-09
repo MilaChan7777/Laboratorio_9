@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Laboratorio 9</title>
+</head>
+<body>
+    <section class="container-pequeño">
+        <div class="container-comentario">
+            <input type="text" id="comentario" placeholder="¿Qué estás pensando, Camila?" class="input-comentario" onclick="abrirModal()">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsSKMnS28_ZUm8JnnCSxKjlamBsR5DCigKQESm47PkYAnUy8WOBiDasPAbVeaGYEy_Qok&usqp=CAU" alt="Imagen Circular" class="imagen-circular"/>
+        </div>
+    </section>
+    <div id="modal" class="modal">
+        <div class="modal-contenido">
+            <button id="cerrar-modal" class="cerrar-modal" onclick="cerrarModal()">X</button>
+            <textarea id="comentario-modal" placeholder="Escribe un comentario más grande"></textarea>
+            <button id="publicar" onclick="publicarComentario()" disabled>Publicar</button>
+        </div>
+    </div>
+    <div class="publicaciones"></div>
+    <footer>
+        <script src="script.js"></script>
+    </footer>
+</body>
+</html>
+
