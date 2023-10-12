@@ -7,20 +7,27 @@
     <title>Laboratorio 9</title>
 </head>
 <body>
-    <section class="container-pequeño">
+    <section class="facebook">
+    <div class="container-pequeño">
         <div class="container-comentario">
-            <input type="text" id="comentario" placeholder="¿Qué estás pensando, Camila?" class="input-comentario" onclick="abrirModal()">
+            <input type="text" id="comentario" placeholder="¿Qué estás pensando, Andrea?" class="input-comentario" onclick="abrirModal()">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsSKMnS28_ZUm8JnnCSxKjlamBsR5DCigKQESm47PkYAnUy8WOBiDasPAbVeaGYEy_Qok&usqp=CAU" alt="Imagen Circular" class="imagen-circular"/>
         </div>
-    </section>
+    </div>
     <div id="modal" class="modal">
         <div class="modal-contenido">
-            <button id="cerrar-modal" class="cerrar-modal" onclick="cerrarModal()">X</button>
-            <textarea id="comentario-modal" placeholder="Escribe un comentario más grande"></textarea>
+            <h4 class="crear">Crear publicación</h4>
+            <hr class="barra"></chr>
+            <button id="cerrar-modal" class="cerrar-modal" onclick="cerrarModal()"><p class="icono-x">X</p></button>
+            <h6 class="user-name">Andrea Andrade</h6>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsSKMnS28_ZUm8JnnCSxKjlamBsR5DCigKQESm47PkYAnUy8WOBiDasPAbVeaGYEy_Qok&usqp=CAU" alt="Imagen Circular" class="imagen-circular2"/>
+            <textarea id="comentario-modal" placeholder="¿Qué estás pensando, Andrea?"></textarea>
             <button id="publicar" onclick="publicarComentario()" disabled>Publicar</button>
         </div>
     </div>
-    <div class="publicaciones"></div>
+    <div class="publicaciones">
+    </div>
+</section>
     <footer>
         <script src="script.js"></script>
     </footer>
